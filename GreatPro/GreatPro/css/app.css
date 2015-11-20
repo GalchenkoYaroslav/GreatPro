@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'Europe';
+    src: url('../fonts/europe.eot');
+    src: url('../fonts/europe.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/europe.woff2') format('woff2'),
+    url('../fonts/europe.woff') format('woff'),
+    url('../fonts/europe.ttf') format('truetype'),
+    url('../fonts/europe.svg#europe') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/intro.eot');
+    src: url('../fonts/intro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/intro.woff2') format('woff2'),
+    url('../fonts/intro.woff') format('woff'),
+    url('../fonts/intro.ttf') format('truetype'),
+    url('../fonts/intro.svg#intro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Rust';
+    src: url('../fonts/nexa_rust.eot');
+    src: url('../fonts/nexa_rust.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/nexa_rust.woff2') format('woff2'),
+    url('../fonts/nexa_rust.woff') format('woff'),
+    url('../fonts/nexa_rust.ttf') format('truetype'),
+    url('../fonts/nexa_rust.svg#nexa_rust') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *:after, *:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+address {
+    color: inherit;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.page.ng-enter {
+    z-index: 1;
+}
+
+.page.ng-leave {
+    z-index: 0;
+}
+
+.page {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.page .logo-sm {
+    position: absolute;
+    z-index: 1;
+}
+
+.page .production .logo-sm {
+    left: 3%;
+    top: 3%;
+    width: 9%
+}
+
+.page .creative .logo-sm {
+    right: 3%;
+    top: 3%;
+    width: 15%
+}
+
+.page-home {
+    background-image: url('../img/home/bg.png');
+}
+
+.page-home .production .logo-sm,
+.page-home .creative .logo-sm {
+    -moz-animation: fadeIn ease 1.5s 1.5s;
+    -o-animation: fadeIn ease 1.5s 1.5s;
+    -webkit-animation: fadeIn ease 1.5s 1.5s;
+    animation: fadeIn ease 1.5s 1.5s;
+}
+
+.page-home .production .logo-sm.loading,
+.page-home .creative .logo-sm.loading {
+    opacity: 0;
+}
+
+.page-home .production .preview,
+.page-home .creative .preview {
+    position: absolute;
+    top: 162px;
+    z-index: 1;
+}
+
+.page-home.ng-enter .production .preview,
+.page-home.ng-enter .creative .preview {
+    opacity: 0;
+}
+
+.page-home .production .preview {
+    -moz-animation: fadeInLeft ease 1.5s;
+    -o-animation: fadeInLeft ease 1.5s;
+    -webkit-animation: fadeInLeft ease 1.5s;
+    animation: fadeInLeft ease 1.5s;
+}
+
+.page-home .creative .preview {
+    -moz-animation: fadeInRight ease 1.5s;
+    -o-animation: fadeInRight ease 1.5s;
+    -webkit-animation: fadeInRight ease 1.5s;
+    animation: fadeInRight ease 1.5s;
+}
+
+.page-home .production .preview {
+    left: 0;
+    top: 21%;
+    width: 35%;
+}
+
+.page-home .creative .preview {
+    right: 0;
+    top: 21%;
+    width: 40%;
+}
+
+.page-home address {
+    color: #ffffff;
+    font-family: Europe, 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 120%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: absolute;
+}
+
+.page-home .production address {
+    text-align: left;
+}
+
+.page-home .creative address {
+    text-align: right;
+}
+
+.page-home svg {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.page-production {
+    background-image: url('../img/production/bg.png');
+}
+
+.page-production .logo-lg {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.page-production .creative-open {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+}
+
+.page-production.ng-enter .creative-open img,
+.page-production.ng-leave .creative-open img {
+    opacity: 0;
+}
+
+.page-production .creative-open img {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 100%;
+}
+
+.page-production .contact-open {
+    height: 16px;
+    left: 50%;
+    position: absolute;
+    top: 3%;
+}
+
+.page-production .contact-open img {
+    left: -50%;
+    position: relative;
+    width: 100%;
+}
+
+.page-creative {
+    background-image: url('../img/creative/bg.png');
+}
+
+.page-creative .logo-lg {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+}
+
+.page-creative .production-open {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15%;
+}
+
+.page-creative.ng-enter .production-open img,
+.page-creative.ng-leave .production-open img {
+    opacity: 0;
+}
+
+.page-creative .production-open img {
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-creative .contact-open {
+    left: 50%;
+    position: absolute;
+    top: 3%;
+}
+
+.page-creative .contact-open img {
+    left: -50%;
+    position: relative;
+    width: 100%;
+}
+
+.page-contact {
+    background-color: #000;
+    color: #fff;
+}
+
+.page-contact h1 {
+    font-family: 'Nexa Rust', 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.page-contact h1 .important {
+    color: #009fe3;
+    font-weight: bold;
+}
+
+.page-contact .social p {
+    float: right;
+}
+
+.page-contact .social a img {
+    width: 100%;
+}
+
+.page-contact address {
+    font-family: Intro, 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;
+}
+
+.page-contact address .important {
+    color: #009fe3;
+}
+
+.page-contact .map {
+    width: 100%;
+}
+
+.page-contact .contact-production .logo-sm {
+    width: 9%
+}
+
+.page-contact .contact-creative .logo-sm {
+    width: 15%
+}
+
+.page-portfolio {
+    background-image: url('../img/portfolio/bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 80%;
+    left: 0;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.page-career .positions {
+    left: 0;
+    position: absolute;
+    top: 3%;
+    width: 100%;
+}
+
+.page-career .title {
+    color: #ffffff;
+    font-family: 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-career hr {
+    background-color: #ffffff;
+    border: none;
+    height: 1px;
+    margin: 6px auto 12px;
+    padding: 0;
+}
+
+.page-career .position {
+    color: #ffffff;
+    font-family: 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-career .social {
+    bottom: 3%;
+    position: fixed;
+    right: 3%;
+    width: 100%;
+    z-index: 1;
+}
+
+.page-career .social p {
+    float: right;
+    margin-left: 6px;
+    width: 3%;
+}
+
+.page-career .social a img {
+    width: 100%;
+}
+
+.page-career .logo-sm {
+    position: fixed;
+}

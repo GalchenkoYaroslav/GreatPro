@@ -1,0 +1,79 @@
+@-webkit-keyframes ngdialog-flyin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes ngdialog-flyin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes ngdialog-flyout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes ngdialog-flyout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+.ngdialog.angular-dialog-contact.ngdialog-closing .ngdialog-content {
+  -webkit-animation: ngdialog-flyout ease 1.5s;
+  animation: ngdialog-flyout ease 1.5s;
+}
+
+.ngdialog.angular-dialog-contact .ngdialog-content {
+  -webkit-animation: ngdialog-flyin ease 1.5s;
+  animation: ngdialog-flyin ease 1.5s;
+  background-color: #000;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 568px) {
+  .ngdialog.angular-dialog-contact .ngdialog-button:focus {
+    -webkit-animation: none;
+    animation: none;
+  }
+}

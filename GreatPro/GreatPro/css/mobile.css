@@ -1,0 +1,109 @@
+.page-production .creative-open img {
+    -moz-transition: right .3s ease;
+    -o-transition: right .3s ease;
+    -webkit-transition: right .3s ease;
+    transition: right .3s ease;
+}
+
+.page-creative .production-open img {
+    -moz-transition: left .3s ease;
+    -o-transition: left .3s ease;
+    -webkit-transition: left .3s ease;
+    transition: left .3s ease;
+}
+
+.page-home address {
+    font-size: 9px;
+}
+
+.page-contact .contact-close {
+    margin: 3% auto 1.5% auto;
+}
+
+.contact-production .logo-sm {
+    margin: 1.5% auto;
+}
+
+.contact-creative .logo-sm {
+    margin: 0 auto;
+}
+
+.page-production .contact-open,
+.page-creative .contact-open,
+.page-contact .contact-close {
+    width: 3%;
+}
+
+.page-contact h1 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.page-contact h1 .important {
+    font-size: 18px;
+}
+
+.page-contact .social {
+    margin: 0 auto;
+    width: 88px;
+}
+
+.page-contact .social p {
+    height: 16px;
+    margin: 3px;
+    width: 16px;
+}
+
+.page-contact address {
+    font-size: 12px;
+    text-align: center;
+}
+
+.page-contact address .important {
+    font-size: 18px;
+}
+
+.page-contact .map {
+    margin: 12px auto;
+}
+
+.page-career .title {
+    font-size: 30px;
+}
+
+.page-career hr {
+    width: 90px;
+}
+
+@media (min-width: 720px) {
+    .page-home address {
+        font-size: 12px;
+    }
+
+    .page-contact h1 {
+        font-size: 21px;
+    }
+
+    .page-contact h1 .important {
+        font-size: 33px;
+    }
+
+    .page-contact .social {
+        margin: 0 auto;
+        width: 152px;
+    }
+
+    .page-contact .social p {
+        height: 32px;
+        margin: 3px;
+        width: 32px;
+    }
+
+    .page-contact address {
+        font-size: 21px;
+    }
+
+    .page-contact address .important {
+        font-size: 33px;
+    }
+}

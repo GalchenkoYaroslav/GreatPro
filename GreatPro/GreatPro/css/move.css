@@ -1,0 +1,30 @@
+.move-creative-production.ng-enter {
+    -moz-animation: fadeInRight ease 1s;
+    -o-animation: fadeInRight ease 1s;
+    -webkit-animation: fadeInRight ease 1s;
+    animation: fadeInRight ease 1s;
+    overflow-y: hidden;
+}
+
+.move-production-creative.ng-leave {
+    -moz-animation: fadeOutRight ease 1s;
+    -o-animation: fadeOutRight ease 1s;
+    -webkit-animation: fadeOutRight ease 1s;
+    animation: fadeOutRight ease 1s;
+    overflow-y: hidden;
+}
+
+.move-production-creative.ng-enter {
+    -moz-animation: fadeIntLeft ease 1s;
+    -o-animation: fadeInLeft ease 1s;
+    -webkit-animation: fadeInLeft ease 1s;
+    animation: fadeInLeft ease 1s;
+    overflow-y: hidden;
+}
+
+.move-creative-production.ng-leave {
+    -moz-animation: fadeOutLeft ease 1s;
+    -o-animation: fadeOutLeft ease 1s;
+    -webkit-animation: fadeOutLeft ease 1s;
+    animation: fadeOutLeft ease 1s;
+}

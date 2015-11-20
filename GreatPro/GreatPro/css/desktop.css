@@ -1,0 +1,130 @@
+@media (min-width: 960px) {
+    .page-production .creative-open img {
+        -moz-transition: right 1.5s ease;
+        -o-transition: right 1.5s ease;
+        -webkit-transition: right 1.5s ease;
+        transition: right 1.5s ease;
+    }
+
+    .page-creative .production-open img {
+        -moz-transition: left 1.5s ease;
+        -o-transition: left 1.5s ease;
+        -webkit-transition: left 1.5s ease;
+        transition: left 1.5s ease;
+    }
+
+    .contact-production .logo-sm {
+        margin: 1.5% auto 1.5% 0;
+    }
+
+    .contact-creative .logo-sm {
+        margin: 0 0 0 auto;
+    }
+
+    .page-production .contact-open,
+    .page-creative .contact-open,
+    .page-contact .contact-close {
+        width: 1.5%;
+    }
+
+    .page-contact h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .page-contact h1 .important {
+        font-size: 36px;
+    }
+
+    .page-contact .social {
+        margin: 0;
+        width: 100%;
+    }
+
+    .page-contact .social p {
+        height: 32px;
+        margin: 3px;
+        width: 32px;
+    }
+
+    .page-contact address {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .page-contact address .important {
+        font-size: 36px;
+    }
+
+    .page-contact .map {
+        margin: 0 auto;
+    }
+
+    .page-career .title {
+        font-size: 90px;
+    }
+
+    .page-career hr {
+        width: 270px;
+    }
+
+    .page-career .position {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-home address {
+        font-size: 18px;
+    }
+
+    .page-contact h1 {
+        font-size: 24px;
+    }
+
+    .page-contact h1 .important {
+        font-size: 48px;
+    }
+
+    .page-contact .social p {
+        height: 48px;
+        margin: 6px;
+        width: 48px;
+    }
+
+    .page-contact address {
+        font-size: 24px;
+    }
+
+    .page-contact address .important {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .page-home address {
+        font-size: 21px;
+    }
+
+    .page-contact h1 {
+        font-size: 36px;
+    }
+
+    .page-contact h1 .important {
+        font-size: 72px;
+    }
+
+    .page-contact .social p {
+        height: 48px;
+        margin: 6px;
+        width: 48px;
+    }
+
+    .page-contact address {
+        font-size: 36px;
+    }
+
+    .page-contact address .important {
+        font-size: 48px;
+    }
+}
